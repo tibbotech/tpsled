@@ -2,7 +2,7 @@
 TO = $(PREFIX)/opt/tpsled/
 
 all:
-	$(CC) -o tpsled tpsled.c
+	$(CC) $(CLFAGS) $(LDFLAGS) -o tpsled tpsled.c
 
 clean:
 	rm -f tpsled
